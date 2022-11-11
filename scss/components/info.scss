@@ -1,0 +1,75 @@
+.info{
+    padding: 0rem 11rem 5rem;
+
+    &__h2{
+        font-size: 180%;
+        padding-bottom: 1.5rem;
+    }
+
+    &__p{
+        max-width: 80rem;
+        font-size: 110%;
+    }
+
+    &__button{
+        border: none;
+        background: none;
+        font-size: 110%;
+        font-weight: 700;
+        padding: 2rem;
+        padding-left: 0rem;
+        color: #6e6e6e;
+
+        &:hover{
+            color: black;
+            cursor: pointer;
+        }
+    }
+
+    &__informatie{
+        border: 0.1rem solid #d1d7dc;
+        padding: 3rem;
+    }
+
+    &__h2--informatie{
+        padding-bottom: 1rem;
+    }
+
+    &__p--informatie{
+        max-width: 80rem;
+        padding-bottom: 1.5rem;
+    }
+
+    &__button--informatie{
+        padding: 1rem; 
+        font-weight: 700;
+        font-size: 100%;
+        border: 0.1rem solid black;
+        background: #fff;
+
+
+       &:hover{
+        background: #e1e1e1;
+        cursor: pointer;
+        transition: 0.2s;
+       }
+    }
+
+}
+
+@media screen and (max-width:60rem) {
+    .info{
+        padding: 0rem 5rem 5rem;    
+    }
+}
+
+@media screen and (max-width:37.5rem) {
+    .info{
+        padding: 0rem 2rem 5rem;    
+
+        &__informatie{
+            display: none;
+        }
+    }
+}
+

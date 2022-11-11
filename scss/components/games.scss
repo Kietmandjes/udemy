@@ -1,0 +1,96 @@
+.games{
+    padding: 5rem 11rem 5rem;
+
+    &__h2{
+        padding-bottom: 2rem;
+    }
+    
+    &__ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__li{
+        list-style: none;
+        
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &__img{
+        width: 25rem;
+        height: 15rem;
+        object-fit: cover;
+    }
+
+    &__h3{ 
+        font-size: 110%;
+        padding-bottom: 0.4rem;
+    }
+
+    &__naam{
+        font-size: 80%;
+        color: #6e6e6e;
+        padding-bottom: 0.4rem;
+    }
+
+    &__sterren{
+        color: orange;
+        padding-bottom: 0.4rem;
+        font-size: 70%;
+    }
+
+    &__prijs{
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width:87.5rem) {
+    .games{
+        
+        &__li--overwatch{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:75rem) {
+    .games{
+        
+        &__li--minecraft{
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (max-width:60rem) {
+    .games{
+        padding: 5rem 5rem 5rem;    
+    }
+}
+
+@media screen and (max-width:53rem) {
+    .games{
+        
+        &__li--fifa{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:37.5rem) {
+    .games{
+        padding: 5rem 2rem 5rem;  
+    }
+}
+
+@media screen and (max-width:33rem) {
+    .games{
+        
+        &__li--rl{
+            display: none;
+        }
+    }
+}

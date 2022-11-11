@@ -1,0 +1,78 @@
+.uitgelicht{
+    padding: 5rem 11rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+
+    &__img{
+        height: 35rem;
+        width: 35rem;
+    }
+
+    &__tekst{
+        width: 40rem;
+    }
+
+    &__h2{
+        font-size: 170%;
+    }
+
+    &__p{
+        font-size: 120%;
+        padding: 3rem 0rem 3rem;
+    }
+
+    &__button{
+        padding: 1rem; 
+        font-weight: 700;
+        font-size: 100%;
+        border: 0.1rem solid black;
+        background: #1c1c1c;
+        color: #fff;
+ 
+        &:hover{
+         background: #000000;
+         cursor: pointer;
+         transition: 0.2s;
+        }
+    }
+}
+
+@media screen and (max-width:62.5rem) {
+    .uitgelicht{  
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+
+            &__img{
+                height: 40rem;
+                width: 40rem;
+            }
+
+            &__button{
+                width: 100%;
+            }
+    }
+}
+
+@media screen and (max-width:62.5rem) {
+    .uitgelicht__reverse{  
+            display: flex;
+            flex-direction: column-reverse;
+
+    }
+}
+
+@media screen and (max-width:60rem) {
+    .uitgelicht{
+        padding: 5rem 5rem 5rem;    
+    }
+}
+
+
+@media screen and (max-width:37.5rem) {
+    .uitgelicht{
+        padding: 5rem 2rem 5rem;  
+    }
+}

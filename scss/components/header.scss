@@ -1,0 +1,146 @@
+.header{
+    height: 7rem;
+    box-shadow: 0 0.2rem 0.4rem rgb(0 0 0 / 8%), 0 0.22rem 0.4rem rgb(0 0 0 / 8%);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    background: #fff;
+
+    &__menu{
+        height: 4rem;
+        width: 4rem;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        display: none;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &__lijnen{
+        height: 0.4rem;
+        width: 4rem;
+        background: black;
+    }
+
+    &__udemy{
+        height: 3.5rem;
+    }
+
+    &__ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        width: 100%;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    &__li{
+        display: flex;
+
+        &--searchbar{
+            flex-grow: 1;
+        }
+    }
+
+    &__h2{
+        font-size: 80%;
+        font-weight: 300;
+
+        &:hover{
+            cursor: pointer;
+            color: blueviolet;
+            transition: 0.2s;
+        }
+    }
+
+    &__searchbar{
+        flex-grow: 1;
+        padding: 1.5rem;
+        border-radius: 0;
+        border: 0.1rem solid black;
+        outline: none;
+        border-radius: 5rem;
+    }
+
+    &__shoppingcart{
+        font-size: 120%;
+        &:hover{
+            cursor: pointer;
+            color: blueviolet;
+            transition: 0.2s;
+        }
+    }
+
+    &__button{
+       padding: 1rem; 
+       font-weight: 700;
+       font-size: 100%;
+       border: 0.1rem solid black;
+       background: #fff;
+
+       &:hover{
+        background: #e1e1e1;
+        cursor: pointer;
+        transition: 0.2s;
+       }
+
+       &--inschrijven{
+        background: #1c1c1c;
+        color: #fff;
+
+        &:hover{
+            background: #000000;
+            transition: 0.2s
+           }
+       }
+    }
+} 
+
+@media screen and (max-width:68rem) {
+    .header{
+        
+        &__udemyBusiness{
+            display: none;
+        }
+    
+    }
+}
+
+
+@media screen and (max-width:62.5rem) {
+    .header{
+
+        &__udemyLes{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:50rem) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+
+        &__menu{
+            display: flex;
+        }
+
+        &__cat{
+            display: none;
+        }
+
+        &__button{
+            display: none;
+        }
+
+        &__searchbar{
+            display: none;
+        }
+    }
+}

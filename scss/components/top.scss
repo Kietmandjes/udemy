@@ -1,0 +1,76 @@
+.top{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+    padding-top: 0rem;
+    position: relative;
+
+    &__img{
+        width: 90%;
+        height: 40rem;
+        object-fit: cover;
+        object-position: 100% 20%;
+    }
+
+    &__tekst{
+        position: absolute;
+        top: 7rem;
+        left: 16rem;
+        box-shadow: 0 0.2rem 0.4rem rgb(0 0 0 / 8%), 0 0.22rem 0.4rem rgb(0 0 0 / 8%);
+        background: #fff;
+        width: 40rem;
+        padding: 2.5rem;
+    }
+
+    &__h2{
+        font-size: 300%;
+        padding-bottom: 0.5rem;
+    }
+
+    &__p{
+        font-size: 110%;
+    }
+}
+
+@media screen and (max-width:75rem) {
+    .top{
+        
+        &__img{
+            width: 100%;
+        }
+
+        &__tekst{
+            top: 3rem;
+            left: 5rem;
+        }
+    }
+}
+
+@media screen and (max-width:62.5rem) {
+    .top{
+
+        &__h2{
+            font-size: 200%;
+        }
+
+        &__p{
+            font-size: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:43.75rem) {
+    .top{
+
+        &__tekst{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:37.5rem) {
+    .top{
+        padding: 0rem 2rem 5rem;  
+    }
+}
+
